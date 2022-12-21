@@ -1,16 +1,17 @@
 #include<stdio.h>
 int main()
 {
-   int Number, Temp, Reminder, Rev = 0;
-   scanf("%d", &Number);
-  
-   Temp = Number;
+        int i,n,r,rev=0,t;
+        scanf("%d",&n);
+        t=n;
+        while(n>0)
+        {
+            r=n%10;
+            rev=rev*10+r;
+            n=n/10;
+        }
+        {
+            printf("%d",rev);
+        }
 
-   while ( Temp > 0)
-   {
-      Reminder = Temp %10;
-      Rev = Rev *10+ Reminder;
-       Temp = Temp /10;
-   }
-   printf("%d",Rev);
 }
