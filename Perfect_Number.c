@@ -1,15 +1,21 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,result=0;
+    int n,i,c=0;
     scanf("%d",&n);
-    for(i=1;i<=n;i++)
+    for(i=1;i<=n/2;i++)
     {
         if(n%i==0)
-        result=result+i;
+        {
+            c=c+i;
+        }
     }
-    if(result==2*n)
-    printf("True");
-    else
-    printf("False");
+    if(c==n)
+        {
+            printf("True");
+        }
+        else
+        {
+            printf("False");
+        }
 }
